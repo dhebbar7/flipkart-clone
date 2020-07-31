@@ -1,0 +1,84 @@
+.header {
+  background: #2874f0;
+  display: flex;
+  padding: 10px;
+}
+.header__logo_section {
+  display: flex;
+  flex-direction: column;
+  margin-left: 190px;
+  cursor: pointer;
+}
+
+.explore {
+  font-size: 11px;
+  font-style: italic;
+  margin-top: -1px;
+  text-decoration: none;
+  color: #fff;
+  border: none;
+  outline: none;
+}
+
+.plus {
+  color: #ffe500;
+  font-weight: 500;
+  margin-right: 4px;
+}
+
+.header_search {
+  display: flex;
+  margin: 0 50px 0 10px;
+  height: 36px;
+  flex: 1;
+  max-width: 564px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.23);
+}
+
+.header_search > input {
+  height: 36px;
+  width: 100%;
+  padding: 0 16px;
+  font-family: Roboto;
+  border: 0;
+  border-radius: 2px 0 0 2px;
+  color: gray;
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: gray;
+  opacity: 1; /* Firefox */
+}
+
+.searchIcon {
+  background-color: #fff;
+  padding: 6px 12px 6px 8px;
+  border-radius: 0 2px 2px 0;
+  color: #2874f0;
+  cursor: pointer;
+}
+
+.header__nav {
+  display: flex;
+  margin: auto;
+  justify-content: flex-end;
+  color: #fff;
+  font-weight: 500;
+}
+.header__links {
+  margin: auto 20px;
+  display: flex;
+  cursor: pointer;
+}
+
+.cart_section {
+  margin: auto 20px;
+  display: flex;
+  text-decoration: none;
+  cursor: pointer;
+  color: #fff;
+}
+.search:active {
+  border: 0;
+}

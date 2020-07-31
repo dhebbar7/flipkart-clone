@@ -1,0 +1,18 @@
+.menu {
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  padding: 10px;
+  background-color: #fff;
+}
+
+.menu__category {
+  display: flex;
+  margin: 0 20px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.drop_icon {
+  color: #c3c3c3;
+}
