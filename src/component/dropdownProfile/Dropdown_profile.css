@@ -1,0 +1,44 @@
+.profile_dropdown {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  top: 60px;
+  border: none;
+  border-radius: 2px;
+  box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.2);
+  background: #fff;
+  color: #212121;
+  margin-left: -80px;
+}
+
+.dropdown_list {
+  text-align: left;
+  font-size: 14px;
+}
+
+.list_item {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #f0f0f0;
+  padding: 16px 12px;
+  width: 220px;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: none;
+  font-weight: normal;
+}
+
+.list_item:hover {
+  background-color: #f1f3f6;
+}
+
+.list_icon {
+  color: #2874f0;
+  margin-right: 10px;
+}
+
+.visibility {
+  display: none;
+}

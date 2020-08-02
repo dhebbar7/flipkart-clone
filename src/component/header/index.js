@@ -1,14 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import logo from "../../assets/images/flipkart-plus-logo.png";
 import SearchIcon from "@material-ui/icons/Search";
 import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
 import ExpandMore from "@material-ui/icons/ExpandMore";
 import { Link } from "react-router-dom";
+import DropdownProfile from "../dropdownProfile";
 import "./Header.css";
 
 function Header() {
+  const [visibility, setVisibility] = useState(false);
   return (
     <nav className="header">
+      <div className="header__empty"></div>
       {/* flipkart logo */}
       <div className="header__logo_section">
         <img
@@ -31,15 +34,21 @@ function Header() {
       <div className="header_search">
         <input
           type="text"
-          className="search"
+          className="search_input"
           placeholder="Search for products, brands and more"
         />
         <SearchIcon className="searchIcon"></SearchIcon>
       </div>
       <div className="header__nav">
-        <div className="header__links">
-          Dinesh
-          <ExpandMore className="expand_icon"></ExpandMore>
+        <div
+          onMouseEnter={() => setVisibility(true)}
+          onMouseLeave={() => setVisibility(false)}
+        >
+          <div className="header__links">
+            Dinesh
+            <ExpandMore className="expand_icon"></ExpandMore>
+            <DropdownProfile visibility={visibility} />
+          </div>
         </div>
         <div className="header__links">
           More
